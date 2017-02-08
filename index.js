@@ -11,17 +11,18 @@ Save and commit any changes to the git repository
 Push these changes to GitHub
 */
 
-var express = require ('express');
+var express = require('express');
 var app = express();
 
-app.get('/', function(req, res){
+app.get('/', function(req, res) {
   res.send('Creating  a new express appication');
 });
 
-app.get('/about', function(req, res){
+app.get('/about', function(req, res) {
   res.send('Creating  a new path about express appication');
 });
 
-app.listen(3000, function(){
+app.listen(3000, function() {
   console.log("server listening port 3000...")
 })
+module.exports = app;
